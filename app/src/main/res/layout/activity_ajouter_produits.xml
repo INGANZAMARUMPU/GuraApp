@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bi.udev.guraapp.AjouterProduits">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/btn_ajout_image"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ajout_publier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="valider" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_ajout_produit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:ems="10"
+        android:hint="nom du produit"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_ajout_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_ajout_produit"
+        android:ems="10"
+        android:hint="prix"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txt_ajout_descr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_ajout_prix"
+        android:ems="10"
+        android:hint="description du produit"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

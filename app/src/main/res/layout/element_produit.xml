@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/cardNotesProf"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_card_produit"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_gravity="start" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/label_card_prix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notes"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="notes d'une classe"
+                    android:textSize="8pt"
+                    android:id="@+id/label_card_titre" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
